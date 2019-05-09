@@ -15,5 +15,5 @@
 //     return view('welcome');
 // });
 
-Route::GET('/', 'QRGeneratorController@index');
+Route::GET('/storeQR', 'QRGeneratorController@index');
 Route::POST('/storeQR','QRGeneratorController@store');

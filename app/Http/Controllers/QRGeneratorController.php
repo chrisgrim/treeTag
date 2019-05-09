@@ -16,6 +16,6 @@ class QRGeneratorController extends Controller
     	$filename = 'tester.png';
     	$result = QrCode::format('png')->size(500)->generate(request('url'), 'storage/images/'. $filename);
 
-    	return view('qrCode', compact('filename'));
+    	return back();
     }
 }
