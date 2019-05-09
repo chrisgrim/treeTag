@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::GET('/', 'QRGeneratorController@index');
+Route::POST('/storeQR','QRGeneratorController@store');
